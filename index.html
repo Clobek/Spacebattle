@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Game Instructions</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id='container'>
+        <header>
+            <nav>
+                <a class="navigation1" href="instructions.html">Instructions</a>
+                <a class="navigation2" href="index.html">Game</a>
+            </nav>
+        </header>
+        <div class="userAndEnemy">
+            <div class="userShipInfo">
+                <div class="buttonRow">
+                    <input id="shipButton" type="button" value="Change Spaceship Name" onclick="nameShip();"/>
+                    <div class="nameBox">
+                        <div class="staticName">Spaceship Name:</div>
+                        <div class="shipName">No Name</div>
+                    </div>
+                </div>
+                <div class ="wrap">
+                    <div class="image2"><img id="playerShip" src="images/User_Ship.png"></div>
+                    <div class="wrappers">
+                        <div class="hullStatic">Health:</div>
+                        <div class="shipHealth">NA</div>
+                    </div>
+                    <div class="wrappers">
+                        <div class="powerStatic">Power:</div>
+                        <div class="shipPower">NA</div>
+                    </div>
+                    <div class="wrappers">
+                        <div class="accuracyStatic">Accuracy:</div>
+                        <div class="shipAccuracy">NA</div>
+                    </div>
+                </div>
+            </div>
+            <div class="enemyShipInfo">
+                <div class="nameBoxEnemy">
+                    <div class="staticNameEnemy">Enemy Spaceship Captain:</div>
+                    <div class="enemyShipName">No Name</div>
+                </div>
+                <div class ="wrapper">
+                    <div class="image1"></div><img id="alienShip" src="images/Enemy_Ship.png"></div>
+                    <div class="wrappers">
+                        <div class="hullStatic">Health:</div>
+                        <div class="enemyshipHealth">NA</div>
+                    </div>
+                    <div class="wrappers">
+                        <div class="powerStatic">Power:</div>
+                        <div class="enemyshipPower">NA</div>
+                    </div>
+                    <div class="wrappers">
+                        <div class="accuracyStatic">Accuracy:</div>
+                        <div class="enemyshipAccuracy">NA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="static">Stage:</div>
+            <div id="stageInsert">NA</div>
+        </div>
+        <div class="stats">
+            <div class="static">Score:</div>
+            <div id="scoreInsert">NA</div>
+        </div>
+        <div class="stats">
+            <div class="static">Money:</div>
+            <div id="moneyInsert">NA</div>
+        </div>
+        <div class="output">
+            <div class="commandLog">Command Log</div>
+            <div class="playerOutput">Your actions</div>
+            <div class="enemyOutput">Enemy actions</div>
+            <div class="results">Results</div>
+        </div>
+        <div class="actionButtons">
+            <input id="startButton" type="button" value="Start/Restart" onclick="startGame();"/>
+            <input id="fireButton" type="button" value="Fire Lasers" onclick="player.fireLaser();"/>
+            <input id="repeatButton" type="button" value="Repeat Stage" onclick="stageCurrent();"/>
+            <input id="stageButton" type="button" value="Next Stage" onclick="stageUp();"/>
+        </div>
+        <div class="buttonDescription1">
+            <div class="boxDescription1">Starts the game if you've named your ship, restarts if you've lost.</div>
+            <div class="boxDescription2">Attacks the enemy, if the enemy survives they will attack back.</div>
+            <div class="boxDescription3">If you're uncomfortable progressing you can repeat stages.</div>
+            <div class="boxDescription4">Progress to the next stage, spawning 5 new and stronger enemies.</div>
+        </div>
+        <div class="actionButtons">
+            <input id="healButton" type="button" value="Heal" onclick="player.heal();"/>
+            <input id="healthButton" type="button" value="Upgrade Health" onclick="player.upgradeHealth();"/>
+            <input id="powerButton" type="button" value="Upgrade Power" onclick="player.upgradePower();"/>
+            <input id="accuracyButton" type="button" value="Upgrade Accuracy" onclick="player.upgradeAccuracy();"/>
+        </div>
+        <div class="buttonDescription2">
+            <div class="columnInput">
+                <div class="column1">Heals your ship to full health.
+                </div>
+                <div class="cost1">Cost $50</div>
+            </div>
+            <div class="columnInput">
+                <div class="column1">Increases your health by 5.
+                </div>
+                <div class="cost2">Cost $50</div>
+            </div>
+            <div class="columnInput">
+                <div class="column1">Increases your power by 2.
+                </div>
+                <div class="cost3">Cost $50</div>
+            </div>
+            <div class="columnInput">
+                <div class="column1">Increases your accuracy by 1%.
+                </div>
+                <div class="cost4">Cost $50</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

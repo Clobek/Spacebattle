@@ -1,0 +1,612 @@
+body {
+    background-image: url(images/Space_Background.jpg);
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, .7);
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: solid black 2px;
+}
+
+.navigation1 {
+    display: flex;
+    justify-content: center;
+    font-size: 300%;
+    text-decoration: none;
+    font-style: italic;
+    color: purple;
+    width: 50%;
+    height: auto;
+    font-family: 'Audiowide', cursive;
+    border-right: solid black 2px;
+}
+
+.navigation2 {
+    display: flex;
+    justify-content: center;
+    font-size: 300%;
+    text-decoration: none;
+    font-style: italic;
+    color: purple;
+    width: 50%;
+    height: auto;
+    font-family: 'Audiowide', cursive;
+}
+
+.userAndEnemy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, .5);
+    width: 100%;
+    height: auto;
+}
+
+.userShipInfo {
+    display: flex;
+    flex-direction: column;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    width: 100%;
+    height: auto;
+}
+
+.enemyShipInfo {
+    display: flex;
+    flex-direction: column;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    width: 100%;
+    height: auto;
+}
+
+.buttonRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#shipButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    font-size: 14px;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    white-space: pre-wrap;
+    height: auto;
+    color: purple;
+    font-family: 'Audiowide', cursive;
+}
+
+.nameBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: solid black 2px;
+}
+
+.nameBoxEnemy {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: solid black 2px;
+}
+
+.shipName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    height: 50%;
+    width: 100%;
+    font-family: 'Audiowide', cursive;
+    border-top: solid black 2px;
+}
+
+.enemyShipName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50%;
+    width: 100%;
+    font-family: 'Audiowide', cursive;
+    border-top: solid black 2px;
+}
+
+.staticName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background: rgba(255, 255, 255, .3);
+    width: 100%;
+    height: 50%;
+    font-family: 'Audiowide', cursive;
+}
+
+.staticNameEnemy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background: rgba(255, 255, 255, .3);
+    height: 50%;
+    width: 100%;
+    font-family: 'Audiowide', cursive;
+}
+
+#playerShip {
+    display: flex;
+    width: 80%;
+    height: 100%;
+}
+
+#alienShip {
+    display: flex;
+    width: 80%;
+    height: 100%;
+}
+
+.shipHealth {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    border-top: solid black 2px;
+    width: 50%;
+    color: red;
+}
+
+.shipPower {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-top: solid black 2px;
+    font-size: 24px;
+    color: blue;
+}
+
+.shipAccuracy {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-top: solid black 2px;
+    font-size: 24px;
+    color: green;
+}
+
+.enemyshipHealth {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    border-top: solid black 2px;
+    width: 50%;
+    color: red;
+}
+
+.enemyshipPower {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-top: solid black 2px;
+    font-size: 24px;
+    color: blue;
+}
+
+.enemyshipAccuracy {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-top: solid black 2px;
+    font-size: 24px;
+    color: green;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrappers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: 'Audiowide', cursive;
+}
+
+.hullStatic {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    border-top: solid black 2px;
+    width: 50%;
+    background: rgba(255, 255, 255, .3);
+    border-right: solid black 2px;
+}
+
+.powerStatic {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    border-top: solid black 2px;
+    width: 50%;
+    background: rgba(255, 255, 255, .3);
+    border-right: solid black 2px;
+}
+
+.accuracyStatic {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    border-top: solid black 2px;
+    width: 50%;
+    background: rgba(255, 255, 255, .3);
+    border-right: solid black 2px;
+}
+
+.image2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats {
+    display: flex;
+    flex-flow: row;
+    background: rgba(255, 255, 255, .5);
+    width: 100%;
+    border-bottom: solid black 2px;
+}
+
+.static {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    font-size: 24px;
+    background: rgba(255, 255, 255, .3);
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+    font-family: 'Audiowide', cursive;
+}
+
+#moneyInsert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    width: 75.2%;
+    border-right: solid black 2px;
+    font-size: 24px;
+    font-family: 'Audiowide', cursive;
+}
+
+#stageInsert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    width: 75.2%;
+    border-right: solid black 2px;
+    font-size: 24px;
+    font-family: 'Audiowide', cursive;
+}
+
+#scoreInsert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    width: 75.2%;
+    border-right: solid black 2px;
+    font-size: 24px;
+    font-family: 'Audiowide', cursive;
+}
+
+.output {
+    display: flex;
+    flex-flow: column;
+    background: rgba(255, 255, 255, .5);
+    height: 120px;
+    border-right: solid black 2px;
+    border-left: solid black 2px;
+    border-bottom: solid black 2px;
+}
+
+.playerOutput {
+    display: flex;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    font-size: 18px;
+    border-top: dotted;
+    font-family: 'Audiowide', cursive;
+}
+
+.enemyOutput {
+    display: flex;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    font-size: 18px;
+    border-top: dotted;
+    font-family: 'Audiowide', cursive;
+}
+
+.results {
+    display: flex;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    font-size: 18px;
+    border-top: dotted;
+    font-family: 'Audiowide', cursive;
+}
+
+.commandLog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    font-size: 24px;
+    background: rgba(255, 255, 255, .3);
+    font-family: 'Audiowide', cursive;
+}
+
+.actionButtons {
+    display: flex;
+    flex-flow: row;
+    border: solid black 2px;
+}
+
+#startButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    font-size: 14px;
+    color: purple;
+    font-family: 'Audiowide', cursive;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+}
+
+#fireButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    font-size: 14px;
+    color: purple;
+    font-family: 'Audiowide', cursive;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+}
+
+#repeatButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    font-size: 14px;
+    color: purple;
+    font-family: 'Audiowide', cursive;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+}
+
+
+#stageButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    font-size: 14px;
+    color: purple;
+    font-family: 'Audiowide', cursive;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+}
+
+.buttonDescription1 {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    background: rgba(255, 255, 255, .5);
+    border-bottom: solid black 2px;
+    border-top: solid black 2px;
+}
+
+.boxDescription2 {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    font-family: 'Audiowide', cursive;
+    border-right: solid black 2px;
+    border-left: solid black 2px;
+    text-align: center;
+    align-items: center;
+}
+
+.boxDescription3 {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Audiowide', cursive;
+    border-right: solid black 2px;
+    text-align: center;
+    align-items: center;
+}
+
+.boxDescription4 {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Audiowide', cursive;
+    border-right: solid black 2px;
+    text-align: center;
+    align-items: center;
+}
+
+.boxDescription1 {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Audiowide', cursive;
+    border-left: solid black 2px;
+    text-align: center;
+    align-items: center;
+}
+
+#healButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    font-size: 14px;
+    color: purple;
+    font-family: 'Audiowide', cursive;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+    
+}
+
+#healthButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    font-size: 14px;
+    color: purple;
+    font-family: 'Audiowide', cursive;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+}
+
+#powerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    font-size: 14px;
+    color: purple;
+    font-family: 'Audiowide', cursive;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+}
+
+#accuracyButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    font-size: 14px;
+    color: purple;
+    font-family: 'Audiowide', cursive;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+}
+
+.buttonDescription2 {
+    display: flex;
+    font-family: 'Audiowide', cursive;
+    border-left: solid black 2px;
+    text-align: center;
+}
+
+.columnInput {
+    display: flex;
+    width: 25%;
+    flex-flow: column;
+    font-family: 'Audiowide', cursive;
+    border-bottom: solid black 2px;
+    border-top: solid black 2px;
+    border-right: solid black 2px;
+    background: rgba(255, 255, 255, .5)
+}
+
+.lore {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: rgba(255, 255, 255, .5);
+    border-right: solid black 2px;
+    border-left: solid black 2px;
+    color: purple;
+    font-family: 'Audiowide', cursive;
+}
+
+.intro {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: solid black 2px;
+    background: rgba(255, 255, 255, .5);
+    color: purple;
+    font-family: 'Audiowide', cursive;
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: center;
+    border-bottom: dotted black 2px;
+    background: rgba(255, 255, 255, .3);
+    
+}
+
+p {
+    display: flex;
+    width: 96%;
+    margin: 2%;
+    text-align: center;
+}
